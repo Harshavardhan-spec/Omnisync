@@ -6,12 +6,17 @@ import dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Load .env file
+# Load .env file
 dotenv.load_dotenv(BASE_DIR / ".env")
 
-SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-omnisync-capstone-platform-super-secret-key-2026")
+SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-local-development-only")
 DEBUG = os.getenv("DEBUG", "True").lower() in ("true", "1")
 
-ALLOWED_HOSTS = [host.strip() for host in os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1,*").split(",") if host.strip()]
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+    if host.strip()
+]
 
 AUTH_USER_MODEL = "accounts.User"
 
