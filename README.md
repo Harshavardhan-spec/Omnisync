@@ -39,8 +39,6 @@ DejaVu_Hack
 - [23. Troubleshooting](#23-troubleshooting)
 - [24. Production Readiness and Security](#24-production-readiness-and-security)
 - [25. Contributing](#25-contributing)
-- [26. License](#26-license)
-
 ---
 
 ## 1. Project Overview
@@ -876,11 +874,6 @@ Contributions and improvements should keep the project's role-based workflows re
 4. Update this README when adding routes, dependencies, environment variables, or setup steps.
 5. Run backend checks and frontend lint/build commands before opening a pull request.
 6. Never commit `.env` files, database credentials, access tokens, or private user data.
-
-## 26. License
-
-No `LICENSE` file was present in the supplied repository. Unless a license is added, others should not assume that the project is licensed for redistribution or reuse. Add an appropriate license file if you intend to make the source available under explicit terms.
-
 ---
 
 <div align="center">
